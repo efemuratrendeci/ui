@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7b7b7b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00942c;
+}
+
+.main_information_container {
+  margin: 5em 10em 2.5em 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+  @media (min-width: 1800px) {
+    gap: 5em;
+  }
+}
+
+.name {
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+.short_info {
+  position: relative;
+}
+
+.rounded_img {
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 2em;
+}
+
+.profile_photo {
+  width: 10em;
+  height: 10em;
+  min-width: 10em;
+  min-height: 10em;
+  mix-blend-mode: multiply;
+  border-style: groove;
+
+  @media (min-width: 1800px) {
+    width: 15em;
+    height: 15em;
+    min-width: 15em;
+    min-height: 15em;
+  }
+
+  @media (max-width: 600px) {
+    width: 5em;
+    height: 5em;
+    min-width: 5em;
+    min-height: 5em;
+  }
+
+  @media (max-width: 400px) {
+    display: none;
+  }
+}
+
+.divergance {
+  height: 1em;
+  border: 1px solid #b9b9b9;
+}
+
+.timeline_container {
+  margin: 0 5em 0 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5em;
+
+  img {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  h3 {
+    margin-top: -0.25em;
+  }
+
+  .gap {
+    margin-top: -1em;
+    flex-grow: 2;
+    border: 2px solid #b9b9b9;
+    background-color: #b9b9b9;
+    border-radius: 5px;
+  }
+}
+
+.tech_stack_container {
+}
+
+.tech_stack_title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.tech_stack_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech_stack_list_title {
+  text-align: center;
+  font-weight: 500;
+}
+
+.tech_stack_list_item {
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+.tech_stack_list_item:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.tech_icon {
+  width: 3em;
+  height: 3em;
+  min-width: 3em;
+  min-height: 3em;
+  margin: 0.5em 2em;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.3s;
+
+  @media (min-width: 1800px) {
+    width: 6em;
+    height: 6em;
+    min-width: 6em;
+    min-height: 6em;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip_context {
+  visibility: hidden;
+  position: absolute;
+  top: -4em;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #b9b9b9;
+  background-color: #00942c;
+  padding: 1em;
+
+  @media (min-width: 1800px) {
+    left: 1.5em;
+  }
+}
+
+.tooltip:hover .tooltip_context {
+  visibility: visible;
+}
+
+.tooltip:hover .tech_icon {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.company_icon:hover {
+  width: 6em;
+  height: 6em;
+  min-width: 6em;
+  min-height: 6em;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+  @media (min-width: 1800px) {
+    width: 8em;
+    height: 8em;
+    min-width: 8em;
+    min-height: 8em;
+  }
+}
+
+.company_icon {
+  width: 3em;
+  height: 3em;
+  min-width: 3em;
+  min-height: 3em;
+  transition: 0.3s;
+
+  @media (min-width: 1800px) {
+    width: 7.5em;
+    height: 7.5em;
+    min-width: 7.5em;
+    min-height: 7.5em;
+  }
+}
+
+.img_contain {
+  object-fit: contain;
+}
+
+.status-bar {
+  margin: 0 auto;
+  height: 0.5em;
+  width: 5em;
+  border-radius: 0.25em;
+  border: 1px solid #b9b9b9;
+  position: relative;
+
+  .x5 {
+    width: 5em;
+    background-color: #00d808;
+  }
+
+  .x4 {
+    width: 4em;
+    background-color: #c3ff00;
+  }
+
+  .x3 {
+    width: 3em;
+    background-color: #eeff00;
+  }
+
+  .x2 {
+    width: 2em;
+    background-color: #e89e00;
+  }
+
+  .x1 {
+    width: 1em;
+    background-color: #cd0000;
+  }
+}
+
+.status-bar div {
+  height: 100%;
+  position: absolute;
+  left: 0;
+}

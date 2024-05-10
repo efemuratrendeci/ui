@@ -1,0 +1,38 @@
+.tech_stack_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech_stack_list_title {
+  text-align: center;
+  font-weight: 500;
+}
+
+.tech_stack_list_item {
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+.tech_stack_list_item:hover {
+  border-radius: 10px;
+}
+
+.tech_icon {
+  width: 2em;
+  height: 2em;
+  min-width: 2em;
+  min-height: 2em;
+  margin: 0.5em 2em;
+  transition: 0.3s;
+
+  @media (min-width: 1800px) {
+    width: 4em;
+    height: 4em;
+    min-width: 4em;
+    min-height: 4em;
+  }
+}

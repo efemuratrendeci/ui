@@ -1,0 +1,46 @@
+.profile-photo {
+  width: 10em;
+  height: 10em;
+  min-width: 10em;
+  min-height: 10em;
+  mix-blend-mode: multiply;
+  border-style: groove;
+  animation-name: blink;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+  @media (min-width: 1800px) {
+    width: 15em;
+    height: 15em;
+    min-width: 15em;
+    min-height: 15em;
+  }
+
+  @media (max-width: 600px) {
+    width: 5em;
+    height: 5em;
+    min-width: 5em;
+    min-height: 5em;
+  }
+
+  @media (max-width: 400px) {
+    display: none;
+  }
+}
+
+.introduction-container {
+  margin: 5em 10em 2.5em 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5em;
+
+  @media (min-width: 1800px) {
+    gap: 5em;
+  }
+}
+
+.short_info {
+  position: relative;
+  max-width: 35em;
+}

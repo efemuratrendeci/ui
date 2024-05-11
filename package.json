@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "engines": {
-    "node": "22.1.0"
+    "node": "20.9.0"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",

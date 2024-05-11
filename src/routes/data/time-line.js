@@ -26,7 +26,7 @@ const mboTechStack = [
 ];
 
 const mboCerts = [
-    new Certification("1692707461 - White Belt ", "This certification demonstrates proficiency in foundational principles and practices of secure software development. It covers essential concepts such as secure coding, threat modeling, and basic vulnerability management.", "White Belt-Efe Murat Rendeci.pdf"),
+    new Certification("1692707461 - White Belt ", "This certification demonstrates proficiency in foundational principles and practices of secure software development. It covers essential concepts such as secure coding, threat modeling, and basic vulnerability management.", "White Belt-Efe Rendeci"),
     new Certification("1701350045 - Blue Belt ", "Building upon the White Certification, the Blue Certification signifies a deeper understanding and application of secure software development methodologies. It delves into advanced topics such as secure architecture design, encryption techniques, and secure deployment practices.", "Blue Belt-Efe Murat Rendeci.pdf"),
     new Certification("1702848963 - Purple Belt ", "The Purple Certification represents the pinnacle of expertise in secure software development. It validates mastery in complex security strategies, including threat intelligence analysis, advanced penetration testing, and secure software lifecycle management. Holders of the Purple Certification are recognized as leaders in the field, capable of designing and implementing highly resilient and secure software systems.", "Purple Belt-Efe Murat Rendeci.pdf")
 ];

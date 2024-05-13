@@ -118,38 +118,38 @@ body {
   margin: 0 auto;
   height: 0.5em;
   width: 5em;
-  border-radius: 0.25em;
+  border-radius: 15px;
   border: 1px solid #b9b9b9;
   position: relative;
 
   .x5 {
     width: 5em;
     background-color: #00d808;
-    border-radius: 0.25em;
+    border-radius: 15px;
   }
 
   .x4 {
     width: 4em;
     background-color: #c3ff00;
-    border-radius: 0.25em;
+    border-radius: 15px 0 0 15px;
   }
 
   .x3 {
     width: 3em;
     background-color: #eeff00;
-    border-radius: 0.25em;
+    border-radius: 15px 0 0 15px;
   }
 
   .x2 {
     width: 2em;
     background-color: #e89e00;
-    border-radius: 0.25em;
+    border-radius: 15px 0 0 15px;
   }
 
   .x1 {
     width: 1em;
     background-color: #cd0000;
-    border-radius: 0.25em;
+    border-radius: 15px 0 0 15px;
   }
 }
 

@@ -12,44 +12,15 @@
     display: flex;
     align-items: center;
     gap: 1em;
-    cursor: pointer;
-  }
 
-  &_button {
-    position: absolute;
-    left: 4.5em;
-    visibility: hidden;
-    color: white;
-    background-color: #00942c;
-    padding: 1em 1.15em;
-    height: 3em;
-    width: 3em;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-  }
-
-  @media (max-width: 600px) {
-    &_items {
+    p {
+      transition: all 0.3s ease;
       visibility: hidden;
-      align-items: start;
-      background-color: #00942c96;
-      flex-direction: column;
-      border-radius: 15px;
     }
+  }
 
-    &_button {
-      visibility: visible;
-      z-index: 2;
-    }
-
-    .visible {
-      position: fixed;
-      bottom: 5em;
-      display: flex;
-      visibility: visible;
-      transition: all 1s ease-in;
-    }
+  @media (max-width: 750px) {
+    position: relative;
   }
 }
 
@@ -57,4 +28,15 @@
   margin: 1em;
   width: 2em;
   height: 2em;
+  cursor: pointer;
+
+  @media (max-width: 750px) {
+    margin: 0.1em;
+    width: 1em;
+    height: 1em;
+  }
+}
+
+.nav_icon:hover + p {
+  visibility: visible;
 }

@@ -1,18 +1,55 @@
 <script>
+  import { browser } from '$app/environment';
+  import { onMount } from "svelte";
   import techStackData from "../data/tech-stack.js";
   export let stackName = "languages";
 
-  const grouppedData = [];
-  techStackData[stackName].forEach((item, index) => {
-    if (index % 6 === 0) {
-      grouppedData.push([item]);
-    } else {
-      grouppedData[grouppedData.length - 1].push(item);
-    }
+  let grouppedData = [];
+
+  const debounce = (func, delay) => {
+    let timer;
+
+    return function () {
+      const context = this;
+      const args = arguments;
+      clearTimeout(timer);
+      timer = setTimeout(() => func.apply(context, args), delay);
+    };
+  };
+
+  const setGroupedData = () => {
+    const median = window.innerWidth < 600 ? 4 : 6;
+    const tempData = []
+
+    techStackData[stackName].forEach((item, index) => {
+      if (index % median === 0) {
+        tempData.push([item]);
+      } else {
+        tempData[tempData.length - 1].push(item);
+      }
+    });
+
+    grouppedData = tempData;
+  };
+
+  const debouncedSetWindowWidth = debounce(setGroupedData, 300);
+
+  if(browser) {
+    setGroupedData();
+  }
+
+  onMount(() => {
+    window.addEventListener("resize_tech", debouncedSetWindowWidth);
+
+    return () => {
+      window.removeEventListener("resize_tech", debouncedSetWindowWidth);
+    };
   });
 </script>
 
-<p class="tech_stack_list_title">{stackName.charAt(0).toUpperCase() + stackName.slice(1)}</p>
+<p class="tech_stack_list_title">
+  {stackName.charAt(0).toUpperCase() + stackName.slice(1)}
+</p>
 {#each grouppedData as group}
   <div class="tech_stack_list">
     {#each group as item}

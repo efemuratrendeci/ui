@@ -7,11 +7,53 @@
   left: -1em;
   width: 150%;
   height: 5em;
+
+  &_items {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  &_button {
+    position: absolute;
+    left: 4.5em;
+    visibility: hidden;
+    color: white;
+    background-color: #00942c;
+    padding: 1em 1.15em;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    &_items {
+      visibility: hidden;
+      align-items: start;
+      background-color: #00942c96;
+      flex-direction: column;
+      border-radius: 15px;
+    }
+
+    &_button {
+      visibility: visible;
+      z-index: 2;
+    }
+
+    .visible {
+      position: fixed;
+      bottom: 5em;
+      display: flex;
+      visibility: visible;
+      transition: all 1s ease-in;
+    }
+  }
 }
 
-
 .nav_icon {
-    margin: 1em;
-    width: 2em;
-    height: 2em;
+  margin: 1em;
+  width: 2em;
+  height: 2em;
 }

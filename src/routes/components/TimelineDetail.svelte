@@ -39,10 +39,10 @@
             alt=""
             class="company_icon_sm img_contain"
           />
-          <h1>Projects@{timelineDetail.title.split(':')[0]}</h1>
+          <h2>Projects@{timelineDetail.title.split(':')[0]}</h2>
         </div>
         {#each timelineDetail.projects as project}
-          <h2>{project.title}</h2>
+          <h3>{project.title}</h3>
           <p>{project.description}</p>
           <div class="dialog_chippers">
             {#each project.tags as tag}
@@ -58,7 +58,7 @@
             alt=""
             class="company_icon_sm img_contain"
           />
-          <h1>Certificates@{timelineDetail.title.split(':')[0]}</h1>
+          <h2>Certificates@{timelineDetail.title.split(':')[0]}</h2>
         </div>
         {#each timelineDetail.certs as cert}
           {#if cert.link}

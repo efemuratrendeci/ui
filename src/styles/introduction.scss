@@ -17,13 +17,6 @@
   }
 
   @media (max-width: 600px) {
-    width: 5em;
-    height: 5em;
-    min-width: 5em;
-    min-height: 5em;
-  }
-
-  @media (max-width: 400px) {
     display: none;
   }
 }
@@ -37,6 +30,10 @@
 
   @media (min-width: 1800px) {
     gap: 5em;
+  }
+
+  @media (max-width: 600px) {
+    margin: 2.5em 5em 1.25em 5em;
   }
 }
 

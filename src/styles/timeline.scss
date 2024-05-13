@@ -34,7 +34,7 @@
   }
 
   @media (max-width: 600px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     min-height: 55em;
   }
 }

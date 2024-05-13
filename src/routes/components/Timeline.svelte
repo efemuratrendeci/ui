@@ -43,6 +43,6 @@
     <img src="mercedes-benz.jpeg" alt="" class="rounded_img company_icon" />
     <p>2022</p>
   </div>
-  <div class="gap"></div>
+  <div class="gap last"></div>
   <h3>&#8734;</h3>
 </div>

@@ -21,7 +21,12 @@
     <a href="https://www.instagram.com/efemuratrendeci/"
       ><img src="instagram.png" alt="" class="nav_icon" /></a
     >
-    <img src="location.png" alt="" class="nav_icon" />
+    <div>
+      <img src="location.png" alt="" class="nav_icon" />
+      <div class="tooltip">
+        <p class="tooltip_context">Istanbul/Turkiye</p>
+      </div>
+    </div>
   </div>
   <button on:click={handleActionButtonClick} class="navbar_button">{buttonSign}</button>
 </div>

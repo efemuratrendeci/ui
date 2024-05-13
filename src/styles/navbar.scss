@@ -19,8 +19,14 @@
     }
   }
 
+  @media (max-width: 1350px) {
+    width: 90%;
+    position: sticky;
+  }
+
   @media (max-width: 750px) {
-    position: relative;
+    width: 90%;
+    height: 2.5em;
   }
 }
 

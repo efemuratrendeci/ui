@@ -18,8 +18,8 @@
   };
 
   const setGroupedData = () => {
-    const median = window.innerWidth < 600 ? 4 : 6;
-    const tempData = []
+    const median = window.innerWidth < 750 ? 4 : 6;
+    const tempData = [];
 
     techStackData[stackName].forEach((item, index) => {
       if (index % median === 0) {
@@ -39,10 +39,10 @@
   }
 
   onMount(() => {
-    window.addEventListener("resize_tech", debouncedSetWindowWidth);
+    window.addEventListener("resize", debouncedSetWindowWidth);
 
     return () => {
-      window.removeEventListener("resize_tech", debouncedSetWindowWidth);
+      window.removeEventListener("resize", debouncedSetWindowWidth);
     };
   });
 </script>

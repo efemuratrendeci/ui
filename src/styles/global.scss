@@ -8,7 +8,7 @@
   25% {
     border: 2px solid #006394;
     background-color: #006394;
-    box-shadow: 0 0 5px #dddddd;
+    box-shadow: 0 0 15px #bfbfbf;
   }
   100% {
     border: 2px solid #b9b9b9;
@@ -24,11 +24,37 @@
   25% {
     border: 2px solid #00942c;
     background-color: #00942c;
-    box-shadow: 0 0 5px #dddddd;
+    box-shadow: 0 0 15px #bfbfbf;
   }
   100% {
     border: 2px solid #b9b9b9;
     background-color: #b9b9b9;
+  }
+}
+
+@keyframes blink_border {
+  0% {
+    border: 2px solid #b9b9b9;
+  }
+  25% {
+    border: 2px solid #006394;
+    box-shadow: 0 0 15px #bfbfbf;
+  }
+  100% {
+    border: 2px solid #b9b9b9;
+  }
+}
+
+@keyframes blink_border_last {
+  0% {
+    border: 2px solid #b9b9b9;
+  }
+  25% {
+    border: 2px solid #00942c;
+    box-shadow: 0 0 15px #bfbfbf;
+  }
+  100% {
+    border: 2px solid #b9b9b9;
   }
 }
 

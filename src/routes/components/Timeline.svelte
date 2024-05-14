@@ -40,7 +40,7 @@
   </div>
   <div class="gap"></div>
   <div on:click={() => getCompany(1)}>
-    <img src="mercedes-benz.jpeg" alt="" class="rounded_img company_icon" />
+    <img src="mercedes-benz.jpeg" alt="" class="rounded_img company_icon last_border" />
     <p>2022</p>
   </div>
   <div class="gap last"></div>

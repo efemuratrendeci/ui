@@ -25,12 +25,16 @@
     background-color: #b9b9b9;
     border-radius: 5px;
     animation-name: blink;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
   }
 
   .last {
     animation-name: blink_last;
+  }
+
+  .last_border {
+    animation-name: blink_border_last;
   }
 
   @media (max-width: 600px) {
@@ -62,6 +66,10 @@
   min-width: 3em;
   min-height: 3em;
   transition: 0.3s;
+  border: 2px solid #b9b9b9;
+  animation-name: blink_border;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 
   @media (min-width: 1800px) {
     width: 7.5em;

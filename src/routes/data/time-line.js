@@ -5,6 +5,7 @@ const mboProjects = [
 ];
 
 const mboTechStack = [
+    "Typescript",
     "Next.js",
     "Node.js",
     "Express.js",
@@ -17,12 +18,22 @@ const mboTechStack = [
     "Redis",
     "Docker",
     "Karate Framework",
+    "Test Automation",
+    "CI/CD",
+    "Docker",
+    "Kubernetes",
+    "Jenkins",
+    "Azure",
     "Selenium",
     "Selenium Grid",
     "Superset",
     "Github",
     "Kong Gateway",
     "Vue.js",
+    "Stencil.js",
+    "Svelte",
+    "Shadow DOM",
+    "Web Components"
 ];
 
 const mboCerts = [

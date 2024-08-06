@@ -49,6 +49,7 @@
               <div class="dialog_chipper">{tag}</div>
             {/each}
           </div>
+          <br>
         {/each}
       {/if}
       {#if timelineDetail.certs && timelineDetail.certs.length > 0}

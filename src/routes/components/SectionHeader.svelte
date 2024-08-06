@@ -1,5 +1,10 @@
 <script>
-	export let header;
+  export let header;
 </script>
 
-<h2 class="section_header">{header}</h2>
+<div class="section_header">
+  <h2>{header}</h2>
+  {#if header.toLowerCase() === "timeline"}
+    <span class="section_header_detail">click icons for more</span>
+  {/if}
+</div>

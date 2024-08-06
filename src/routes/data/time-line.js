@@ -2,6 +2,10 @@ import TimeLineDetail, { Project, Certification } from "../models/TimeLine";
 
 const mboProjects = [
     new Project("OneAPI", "OneAPI is the internal API management platform for Mercedes-Benz AG's developer community. It facilitates API providers in creating profiles for their APIs, enhancing global accessibility. My responsibility revolves around the development and upkeep of the analytics API within the platform. This analytics API focuses on tracking and analyzing the traffic of other APIs on the platform. Additionally, I developed and maintained another internal API, the DRD API, which is dedicated to retrieving user information specific to Mercedes-Benz users for the platform.", ["oneAPI {HUB}", "oneAPI {DRD API}", "oneAPI {ANALYTICS API}", "oneAPI {WEB COMPONENTS}", "oneAPI {DOCS}"]),
+    new Project("Taking Responsibilty", "I love taking responsibilities at team. I step forward when our team has no deputy for our test automation engineer. I have zero exprience of test otomastion projects but I manage to handle and onboard a new QA engineer.", ["QA",  "Java"]),
+    new Project("Making Things Efficient", "I developed a npm package called swagger-to-test-automation. While I was doing deputy work I realized that if there is a tool can helps us to generate test scenarios from open api spesifications it would save time for us. I searched and found tools with price but I think that we can develop this feature easily. I developed the package and it generates us end to end test scenarios", ["node.js", "Karate"]),
+    new Project("Generating Solutions", "I also contrubute and lead some of our proof of concept works. This works are anomaly detection proof of concepts for detecting API traffic anomalies, Rolling up druid data to reduce data size, Creating endpoint reports for analytics-api.", ["Python", "Druid", "Superset"]),
+    new Project("Call The Security!", "There was an internal Mercedes-Benz program called Secure Software Development. I contrubute the program and get the highest belt (certificate) of purple.", ["Immersive Labs", "Attack Patterns", "Secure Development"])
 ];
 
 const mboTechStack = [

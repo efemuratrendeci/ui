@@ -6,5 +6,7 @@
   <h2>{header}</h2>
   {#if header.toLowerCase() === "timeline"}
     <span class="section_header_detail">click icons for more</span>
+	{:else}
+	<span class="section_header_detail">hover icons for more</span>
   {/if}
 </div>

@@ -6,7 +6,7 @@ const languages = [
     new TechStack("C#", 4, "c-sharp.png"),
     new TechStack("Java", 1, "java.png"),
     new TechStack("Dart", 3, "dart.png"),
-    new TechStack("Python", 2, "python.png"),
+    new TechStack("Python", 4, "python.png"),
     new TechStack("Golang", 2, "golang.png", "img_contain")
 ];
 

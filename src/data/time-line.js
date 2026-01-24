@@ -3,7 +3,7 @@ import TimeLineDetail, { Project, Certification } from "../models/TimeLine.js";
 const mboProjects = [
   new Project(
     "Atlassian Integration",
-    "With this project I was responsible to sync all Mercedes-Benz users to Atlassian Scim and manage Internal acceess froups to Atlassian Scim. Also administrated Atlassian App's and automations",
+    "With this project I was responsible to sync all Mercedes-Benz users to Atlassian Scim and manage Internal acceess froups to Atlassian Scim. Also administrated Atlassian App's and automations for all other Mercedes-Benz users.",
     ["Jira", "Scim", "Confluence", "JSM", "Mercedes-Benz Internal Platform", "Python", "Kafka"]
   ),
   new Project(

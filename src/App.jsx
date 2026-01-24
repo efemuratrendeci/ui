@@ -13,11 +13,8 @@ export default function App() {
       <SectionHeader header="Timeline" />
       <Timeline />
       <div className="tech_stack_projects">
-        <div className="tech_stack_projects_header">
+        <div className="tech_stack_projects_column">
           <SectionHeader header="Tech Stack" />
-          <SectionHeader header="External Projects" />
-        </div>
-        <div className="tech_stack_projects_body">
           <div className="tech_stack_column">
             <details className="tech_stack_group" open>
               <summary>Languages</summary>
@@ -40,6 +37,9 @@ export default function App() {
               <TechStack stackName="others" showTitle={false} />
             </details>
           </div>
+        </div>
+        <div className="tech_stack_projects_column">
+          <SectionHeader header="External Projects" />
           <div className="projects_column">
             <Projects />
           </div>

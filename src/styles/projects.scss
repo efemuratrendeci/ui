@@ -1,19 +1,13 @@
 .tech_stack_projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  align-items: start;
+}
+
+.tech_stack_projects_column {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
-}
-
-.tech_stack_projects_header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5em;
-  align-items: end;
-}
-
-.tech_stack_projects_body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 1.5em;
 }
 
@@ -120,8 +114,7 @@
 }
 
 @media (max-width: 900px) {
-  .tech_stack_projects_header,
-  .tech_stack_projects_body {
+  .tech_stack_projects {
     grid-template-columns: 1fr;
   }
 }

@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "EFSE: Auto Variant Image Sync",
-    subtitle: "Shopify App Store'da mevcut",
+    subtitle: "Available in the Shopify App Store",
     description:
       "EFSE automates assigning images to variants via Google Drive, Amazon S3, and Azure Blob.",
     iconSrc: "/efse.png",

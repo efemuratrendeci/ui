@@ -1,0 +1,68 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.6.2
+2 info using node@v25.2.1
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/efemuratrendeci/projects/personal/personal_cv/.npmrc
+5 silly config load:file:/Users/efemuratrendeci/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install lucide-react
+8 verbose argv "install" "lucide-react" "--cache" "./.npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/efemuratrendeci/projects/personal/personal_cv/.npm-cache/_logs/2026-01-24T18_11_38_452Z-
+10 verbose logfile /Users/efemuratrendeci/projects/personal/personal_cv/.npm-cache/_logs/2026-01-24T18_11_38_452Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+14 silly idealTree buildDeps
+15 silly fetch manifest lucide-react@*
+16 silly packumentCache full:https://registry.npmjs.org/lucide-react cache-miss
+17 http cache https://registry.npmjs.org/lucide-react 17ms (cache hit)
+18 silly packumentCache full:https://registry.npmjs.org/lucide-react set size:2151234 disposed:false
+19 silly fetch manifest react@^18.3.1
+20 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+21 http cache https://registry.npmjs.org/react 8ms (cache hit)
+22 silly packumentCache full:https://registry.npmjs.org/react set size:6410034 disposed:false
+23 silly placeDep ROOT lucide-react@0.563.0 OK for: ui@0.0.1 want: *
+24 silly reify moves {}
+25 verbose stack Error: EACCES: permission denied, mkdir '/Users/efemuratrendeci/projects/personal/personal_cv/node_modules/lucide-react'
+25 verbose stack     at async mkdir (node:internal/fs/promises:861:10)
+25 verbose stack     at async /usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:576:20
+25 verbose stack     at async Promise.allSettled (index 0)
+25 verbose stack     at async [reifyPackages] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:313:11)
+25 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:125:5)
+25 verbose stack     at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:150:5)
+25 verbose stack     at async Npm.exec (/usr/local/lib/node_modules/npm/lib/npm.js:208:9)
+25 verbose stack     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli/entry.js:67:5)
+26 error code EACCES
+27 error syscall mkdir
+28 error path /Users/efemuratrendeci/projects/personal/personal_cv/node_modules/lucide-react
+29 error errno -13
+30 error Error: EACCES: permission denied, mkdir '/Users/efemuratrendeci/projects/personal/personal_cv/node_modules/lucide-react'
+30 error     at async mkdir (node:internal/fs/promises:861:10)
+30 error     at async /usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:576:20
+30 error     at async Promise.allSettled (index 0)
+30 error     at async [reifyPackages] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:313:11)
+30 error     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:125:5)
+30 error     at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:150:5)
+30 error     at async Npm.exec (/usr/local/lib/node_modules/npm/lib/npm.js:208:9)
+30 error     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli/entry.js:67:5) {
+30 error   errno: -13,
+30 error   code: 'EACCES',
+30 error   syscall: 'mkdir',
+30 error   path: '/Users/efemuratrendeci/projects/personal/personal_cv/node_modules/lucide-react'
+30 error }
+31 error
+31 error The operation was rejected by your operating system.
+31 error It is likely you do not have the permissions to access this file as the current user
+31 error
+31 error If you believe this might be a permissions issue, please double-check the
+31 error permissions of the file and its containing directories, or try running
+31 error the command again as root/Administrator.
+32 silly unfinished npm timer reify 1769278298692
+33 silly unfinished npm timer reify:createSparse 1769278298765
+34 verbose cwd /Users/efemuratrendeci/projects/personal/personal_cv
+35 verbose os Darwin 25.0.0
+36 verbose node v25.2.1
+37 verbose npm  v11.6.2
+38 verbose exit -13
+39 verbose code -13
+40 error A complete log of this run can be found in: /Users/efemuratrendeci/projects/personal/personal_cv/.npm-cache/_logs/2026-01-24T18_11_38_452Z-debug-0.log

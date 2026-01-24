@@ -1,43 +1,52 @@
 .profile-photo {
-  width: 10em;
-  height: 10em;
-  min-width: 10em;
-  min-height: 10em;
-  mix-blend-mode: multiply;
-  border-style: groove;
-  animation-name: blink;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  width: 11em;
+  height: 11em;
+  min-width: 11em;
+  min-height: 11em;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  background: var(--surface);
 
   @media (min-width: 1800px) {
-    width: 15em;
-    height: 15em;
-    min-width: 15em;
-    min-height: 15em;
+    width: 16em;
+    height: 16em;
+    min-width: 16em;
+    min-height: 16em;
   }
 
   @media (max-width: 600px) {
-    display: none;
+    width: 8.5em;
+    height: 8.5em;
+    min-width: 8.5em;
+    min-height: 8.5em;
   }
 }
 
 .introduction-container {
-  margin: 5em 10em 2.5em 10em;
-  display: flex;
+  margin: 1.5em 0 3.5em;
+  display: grid;
+  grid-template-columns: 160px 1fr;
   align-items: center;
-  justify-content: center;
   gap: 2.5em;
+  padding: 2.5em 3em;
 
   @media (min-width: 1800px) {
-    gap: 5em;
+    grid-template-columns: 220px 1fr;
+    gap: 4.5em;
   }
 
   @media (max-width: 600px) {
-    margin: 2.5em 5em 1.25em 5em;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2em;
+    gap: 1.5em;
   }
 }
 
 .short_info {
   position: relative;
-  max-width: 35em;
+  max-width: 38em;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--muted);
 }

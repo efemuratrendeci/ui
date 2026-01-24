@@ -2,6 +2,11 @@ import TimeLineDetail, { Project, Certification } from "../models/TimeLine.js";
 
 const mboProjects = [
   new Project(
+    "Atlassian Integration",
+    "With this project I was responsible to sync all Mercedes-Benz users to Atlassian Scim and manage Internal acceess froups to Atlassian Scim. Also administrated Atlassian App's and automations",
+    ["Jira", "Scim", "Confluence", "JSM", "Mercedes-Benz Internal Platform", "Python", "Kafka"]
+  ),
+  new Project(
     "OneAPI",
     "OneAPI is the internal API management platform for Mercedes-Benz AG's developer community. It facilitates API providers in creating profiles for their APIs, enhancing global accessibility. My responsibility revolves around the development and upkeep of the analytics API within the platform. This analytics API focuses on tracking and analyzing the traffic of other APIs on the platform. Additionally, I developed and maintained another internal API, the DRD API, which is dedicated to retrieving user information specific to Mercedes-Benz users for the platform.",
     [
@@ -63,7 +68,13 @@ const mboTechStack = [
   "Stencil.js",
   "Svelte",
   "Shadow DOM",
-  "Web Components"
+  "Web Components",
+  "Python",
+  "GitHub Actions",
+  "GitLab CI/CD",
+  "GitLab",
+  "GitLab Runner",
+  "GitLab Runner",
 ];
 
 const mboCerts = [

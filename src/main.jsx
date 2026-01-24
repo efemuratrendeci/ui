@@ -7,6 +7,7 @@ import "./styles/section-header.scss";
 import "./styles/timeline.scss";
 import "./styles/tech-stack.scss";
 import "./styles/navbar.scss";
+import "./styles/projects.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

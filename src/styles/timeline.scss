@@ -1,10 +1,15 @@
 .timeline_container {
-  margin: 0 5em 5em 5em;
+  margin: 0 0 4em;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 1.5em;
+  gap: 1.25em;
+  padding: 1.75em 2em;
+  border-radius: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
 
   img {
     margin: 0;
@@ -16,41 +21,57 @@
 
   h3 {
     margin-top: -0.25em;
+    color: var(--muted);
+    font-weight: 500;
   }
 
   .gap {
     margin-top: -1em;
     flex-grow: 2;
-    border: 2px solid #b9b9b9;
-    background-color: #b9b9b9;
-    border-radius: 5px;
-    animation-name: blink;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #d8dbe3, #eef1f7);
   }
 
   .last {
-    animation-name: blink_last;
+    background: linear-gradient(90deg, #d8dbe3, #dbeafe);
   }
 
   .last_border {
-    animation-name: blink_border_last;
+    border-color: var(--accent);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
+  }
+
+  > div:not(.gap) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.75em 0.5em;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    cursor: pointer;
+  }
+
+  > div:not(.gap):hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: var(--shadow-sm);
+    background: var(--surface-soft);
+  }
+
+  > div:not(.gap) * {
+    cursor: pointer;
   }
 
   @media (max-width: 600px) {
     flex-direction: column-reverse;
     min-height: 55em;
+    padding: 1.5em 1em;
   }
 }
 
 .company_icon:hover {
-  width: 6em;
-  height: 6em;
-  min-width: 6em;
-  min-height: 6em;
-  padding: 5px;
-  box-shadow: 0 0 10px #dddddd;
-  cursor: pointer;
+  transform: scale(1.05);
 
   @media (min-width: 1800px) {
     width: 9em;
@@ -61,15 +82,15 @@
 }
 
 .company_icon {
-  width: 3em;
-  height: 3em;
-  min-width: 3em;
-  min-height: 3em;
-  transition: 0.3s;
-  border: 2px solid #b9b9b9;
-  animation-name: blink_border;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+  width: 3.25em;
+  height: 3.25em;
+  min-width: 3.25em;
+  min-height: 3.25em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
 
   @media (min-width: 1800px) {
     width: 7.5em;
@@ -80,10 +101,12 @@
 }
 
 .company_icon_bg {
-  width: 5em;
-  height: 5em;
-  min-width: 5em;
-  min-height: 5em;
+  width: 5.5em;
+  height: 5.5em;
+  min-width: 5.5em;
+  min-height: 5.5em;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
 
   @media (max-width: 600px) {
     display: none;
@@ -101,7 +124,7 @@
 .dialog_info {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 1.5em;
   font-size: 18px;
   padding: 0 2em 0 0;
 
@@ -119,7 +142,7 @@
   h1 {
     margin: 0;
     padding: 0;
-    font-size: 36px;
+    font-size: 34px;
 
     @media (max-width: 600px) {
       font-size: 28px;
@@ -132,10 +155,11 @@
   align-items: center;
   justify-content: center;
   font-size: 12px;
-  padding: 0.5em;
-  border-radius: 5px;
-  color: white;
-  background-color: #00942c;
+  padding: 0.35em 0.6em;
+  border-radius: 999px;
+  color: var(--accent);
+  background-color: var(--accent-soft);
+  border: 1px solid transparent;
 }
 
 .dialog_chippers {
@@ -163,11 +187,12 @@
 }
 
 dialog[open] {
-  border: none;
-  border-radius: 5px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
   min-width: 45em;
   opacity: 1;
   transform: scaleY(1);
+  box-shadow: var(--shadow-md);
 
   @media (max-width: 600px) {
     min-width: 1em;
@@ -176,13 +201,15 @@ dialog[open] {
 
 dialog {
   font-size: 18px;
-  max-width: 50em;
-  max-height: 30em;
-  border: none;
-  border-radius: 15px;
+  max-width: 52em;
+  max-height: 32em;
+  border: 1px solid var(--border);
+  border-radius: 24px;
   opacity: 0;
   transform: scaleY(0);
-  transition: all 0.7s allow-discrete;
+  transition: all 0.5s allow-discrete;
+  padding: 1.5em 1.75em;
+  background: var(--surface);
 
   @media (max-width: 600px) {
     max-width: 20em;
@@ -198,12 +225,12 @@ dialog {
 }
 
 dialog::backdrop {
-  background-color: rgb(0 0 0 / 0%);
-  transition: all 0.7s allow-discrete;
+  background-color: rgb(15 23 42 / 0%);
+  transition: all 0.5s allow-discrete;
 }
 
 dialog[open]::backdrop {
-  background-color: rgb(0 0 0 / 25%);
+  background-color: rgb(15 23 42 / 30%);
 }
 
 @starting-style {

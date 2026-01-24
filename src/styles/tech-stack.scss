@@ -1,33 +1,55 @@
+.tech_stack_card {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0.5em 0 0;
+  margin: 0;
+  max-width: none;
+}
+
 .tech_stack_list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  align-items: start;
+  justify-items: start;
+  text-align: left;
+  gap: 0.7em 1em;
+  padding: 0 0.25em 0.75em;
 }
 
 .tech_stack_list_title {
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: var(--muted);
+  margin: 2em 0 1em;
 }
 
 .tech_stack_list_item {
-  text-align: center;
+  text-align: left;
+  padding: 0.45em 0.3em;
+  border-radius: 14px;
+  transition: background 0.2s ease;
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 0.5em;
 
   p {
     margin: 0;
   }
 }
 
-.tech_stack_list_item:hover {
-  border-radius: 10px;
-}
 
 .tech_icon {
   width: 2em;
   height: 2em;
   min-width: 2em;
   min-height: 2em;
-  margin: 0.5em 2em;
-  transition: 0.3s;
+  margin: 0.15em;
+  transition: transform 0.2s ease;
 
   @media (min-width: 1800px) {
     width: 4em;
@@ -35,4 +57,48 @@
     min-width: 4em;
     min-height: 4em;
   }
+}
+
+.tech_stack_item_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25em;
+}
+
+.tech_stack_item_meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5em;
+}
+
+.tech_stack_item_name {
+  font-size: 0.82rem;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.tech_stack_item_level {
+  display: inline-flex;
+  gap: 0.2em;
+  font-size: 0.85rem;
+  line-height: 1;
+  color: #c5c9d6;
+}
+
+.tech_stack_item_level .star {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.05em;
+  height: 1.05em;
+  border-radius: 999px;
+  background: #f3f4f8;
+  color: #4b5563;
+}
+
+.tech_stack_item_level .star.filled {
+  color: var(--accent);
+  background: var(--accent-soft);
 }

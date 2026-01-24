@@ -9,9 +9,9 @@ export default function Introduction() {
           </p>
         </div>
         <p className="short_info">
-          I am a dedicated Full Stack Developer with a passion for crafting
-          robust backend solutions and creating solutions for the existing
-          system architectures. Love coding and self improvement.
+          Since 2018, I have worked as a Full Stack Software Developer and also
+          delivered system designs and integrations. Being productive and
+          bringing a product to life is my biggest motivation in this work.
         </p>
       </div>
     </div>

@@ -43,7 +43,8 @@ const others = [
   new TechStack("Rabbit MQ", 3, "rabbitmq.png"),
   new TechStack("Selenium Grid", 3, "selenium_grid.png"),
   new TechStack("Superset", 4, "superset.png"),
-  new TechStack("Github", 5, "github.png")
+  new TechStack("Github", 5, "github.png"),
+  new TechStack("GitLab", 5, "gitlab.svg"),
 ];
 
 export default {
